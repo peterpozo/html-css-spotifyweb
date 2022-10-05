@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+    min-height: 90vh;
+    display: flex;
+
+}
+/* Sidebar  */
+
+.sidebar{
+    background-color: #000000;
+    width:230px;
+}
+@media (max-width: 552px) {
+    .sidebar{
+        width: 50px;
+    }
+}
+
+/* Content  */
+
+.content{
+    flex-grow: 1;
+    background-color: #141922;
+}
+
+/* Footer  */
+
+footer{
+    background-color:#282828;
+    height: 10vh
+}
