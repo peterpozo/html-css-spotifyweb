@@ -194,5 +194,123 @@ html{
 
 footer{
     background-color:#282828;
-    height: 10vh
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    z-index: 2;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+/* Footer left  */
+
+.container-footer .footer-left{
+    display: flex;
+    width: calc(100% / 3);
+    align-items: center;
+    justify-content: space-between;
+}
+.container-footer .footer-left .footer-left-up{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.footer-left .footer-left-up .album-cover{
+    width: 30%;
+}
+.footer-left-up .album-cover img{
+    width: 100%;
+}
+.footer-left .footer-left-up .text-album{
+    width: 70%;
+    padding-left: 1rem;
+}
+
+.footer-left .footer-left-down{
+    display: flex;
+    width: 35%;
+}
+
+.footer-left .footer-left-down .fa-folder{
+    margin-left: 0.5rem;
+}
+
+/* Footer-center  */
+
+.container-footer .footer-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% / 3);
+    align-items: center;
+}
+
+.container-footer .footer-center .center-top{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 10px auto;
+
+}
+.footer-center .center-top .fa-circle-play{
+    font-size: 2em;
+}
+.footer-center .center-top .fa-solid{
+    font-size: 1.3em;
+}
+.container-footer .footer-center .center-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-center .center-bottom .row{
+    width: 80%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: grey;
+    margin: 10px;
+}
+
+/* Footer-right  */
+
+.container-footer .footer-right{
+    display: flex;
+    align-items: center;
+    width: calc(100% / 3);
+    justify-content: center;
+}
+
+.container-footer .footer-right .volume{
+    width: 50%;
+    height: 100%;
+    padding: auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.footer-right .volume i{
+    margin: 0 5%;
+
+}
+
+.footer-right .volume .row-volume{
+    height: 5px;
+    width: 50%;
+    background-color: lightgrey;
+    position: relative;
 }
