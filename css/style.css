@@ -116,8 +116,24 @@ html{
     color: white;
 }
 
+.sidebar .container-home:hover{
+    color: white;
+}
 
+.sidebar .container-icon:hover{
+    color: white;
+}
 
+.sidebar .plus-icon:hover{
+    color: white;
+}
+.sidebar .nome-playlist:hover{
+    color: white;
+}
+
+.sidebar .installa-app:hover{
+    color: white;
+}
 
 
 @media (max-width: 552px) {
