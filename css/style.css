@@ -178,9 +178,6 @@ html{
     .sidebar .utente p{
         display: none;
     }
-
-
-   
 }
 
 /* Content  */
@@ -206,6 +203,7 @@ footer{
     display: flex;
     justify-content: space-between;
     margin: 0 1rem;
+    margin-top: 1rem;
 }
 /* Footer left  */
 
@@ -221,7 +219,7 @@ footer{
     width: 60%;
 }
 .footer-left .footer-left-up .album-cover{
-    width: 30%;
+    width: 20%;
 }
 .footer-left-up .album-cover img{
     width: 100%;
@@ -276,7 +274,7 @@ footer{
     padding: 0 10px;
 }
 
-.footer-center .center-bottom .row{
+.footer-center .center-bottom .full-bar{
     width: 80%;
     height: 5px;
     border-radius: 5px;
@@ -296,7 +294,6 @@ footer{
 .container-footer .footer-right .volume{
     width: 50%;
     height: 100%;
-    padding: auto 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -308,9 +305,51 @@ footer{
 
 }
 
-.footer-right .volume .row-volume{
+.footer-right .volume .full-bar{
+    width: 70%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: grey;
+    margin: 10px;
+}
+.half-bar{
     height: 5px;
     width: 50%;
     background-color: lightgrey;
     position: relative;
+}
+.circle-bar{
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    right: -8px;
+    top: -5px;
+    display: none;
+}
+
+.full-bar:hover .half-bar{
+    background-color: yellowgreen;
+}
+.full-bar:hover .circle-bar{
+    display: block;
+}
+
+@media (max-width: 801px) {
+    .footer-left .footer-left-down{
+        flex-direction: column;
+    }
+    .footer-left .footer-left-down .fa-folder{
+        margin-left: 0;
+        margin-top: 0.2rem;
+    }
+    
+}
+
+@media (max-width: 552px){
+    .footer-left .footer-left-up .album-cover {
+        width: 30%;
+    }
+
 }
